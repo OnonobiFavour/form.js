@@ -3,7 +3,7 @@ const text = document.getElementById('text')
 const mail = document.getElementById('mail')
 const password = document.getElementById('pass')
 const confirm_pass = document.getElementById('con_pass')
-const __btn__ = document.querySelector('.btn_submit')
+const _btn_ = document.querySelector('.btn_submit')
 const symbols = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
 password.addEventListener('input', ()=>{
@@ -24,7 +24,7 @@ password.addEventListener('input', ()=>{
         console.log(`${pass.value}`)
     }
 })
-__btn__.addEventListener('click', ()=>{
+_btn_.addEventListener('click', ()=>{
     // e.preventDefault();
     if(!password.value || !text.value || !mail.value){
         alert('Invalid details')
